@@ -1,0 +1,206 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>netstandard</name>
+	</assembly>
+	<members>
+		<member name="T:System.Array">
+			<summary>Arrays allow you to store multiple objects in a single variable.</summary>
+		</member>
+		<member name="T:System.IO.Compression.CompressionLevel">
+			<summary>Compression Levels relate to how much time should be spent compressing Assets into an Asset Bundle.</summary>
+		</member>
+		<member name="T:System.Random">
+			<summary>Class for generating random data.</summary>
+		</member>
+		<member name="T:System.Object">
+			<summary>Base class for all objects Unity can reference.</summary>
+		</member>
+		<member name="T:System.Diagnostics.Debug">
+			<summary>Class containing methods to ease debugging while developing a game.</summary>
+		</member>
+		<member name="T:System.ComponentModel.Design.MenuCommand">
+			<summary>Used to extract the context for a MenuItem.</summary>
+		</member>
+		<member name="P:System.Array.Length">
+			<summary>The length property that returns or sets the number of elements in the Array.</summary>
+		</member>
+		<member name="T:System.IO.Path">
+			<summary>Performs operations on strings that contain file or directory path information.</summary>
+		</member>
+		<member name="T:System.Collections.Hashtable">
+			<summary>You can use a Hashtable to store key+value pairs.</summary>
+		</member>
+		<member name="M:System.IO.Path.Combine(System.String,System.String)">
+			<summary>Concatenates two path strings.</summary>
+		</member>
+		<member name="T:System.Drawing.Color">
+			<summary>Representation of RGBA colors.</summary>
+		</member>
+		<member name="M:System.IO.Path.Combine(System.String,System.String,System.String)">
+			<summary>Concatenates two path strings.</summary>
+		</member>
+		<member name="M:System.IO.Path.Combine(System.String,System.String,System.String,System.String)">
+			<summary>Concatenates two path strings.</summary>
+		</member>
+		<member name="M:System.IO.Path.Combine(System.String[])">
+			<summary>Concatenates two path strings.</summary>
+		</member>
+		<member name="P:System.Drawing.Color.A">
+			<summary>Alpha component of the color (0 is transparent, 1 is opaque).</summary>
+		</member>
+		<member name="M:System.IO.Path.GetDirectoryName(System.String)">
+			<summary>Returns the directory name component of the specified path string.</summary>
+		</member>
+		<member name="M:System.Collections.Hashtable.Add(System.Object,System.Object)">
+			<summary>Adds an element with the specified key and value into the Hashtable.</summary>
+		</member>
+		<member name="M:System.IO.Path.GetExtension(System.String)">
+			<summary>Returns the extension component of the specified path string.</summary>
+		</member>
+		<member name="M:System.Collections.Hashtable.Clear()">
+			<summary>Count is set to zero, and references to other objects from elements of the collection are also released.</summary>
+		</member>
+		<member name="P:System.Drawing.Color.B">
+			<summary>Blue component of the color.</summary>
+		</member>
+		<member name="M:System.IO.Path.GetFileName(System.String)">
+			<summary>Returns the file name, including the extension if any, of the specified path string.</summary>
+		</member>
+		<member name="T:System.ComponentModel.Component">
+			<summary>Base class for everything attached to GameObjects.</summary>
+		</member>
+		<member name="P:System.Drawing.Color.Black">
+			<summary>Solid black. RGBA is (0, 0, 0, 1).</summary>
+		</member>
+		<member name="M:System.IO.Path.GetFileNameWithoutExtension(System.String)">
+			<summary>Returns the file base component of the specified path string without the extension.</summary>
+		</member>
+		<member name="P:System.Drawing.Color.Blue">
+			<summary>Solid blue. RGBA is (0, 0, 1, 1).</summary>
+		</member>
+		<member name="P:System.Drawing.Color.Cyan">
+			<summary>Cyan. RGBA is (0, 1, 1, 1).</summary>
+		</member>
+		<member name="M:System.Collections.Hashtable.Contains(System.Object)">
+			<summary>Determines whether the Hashtable contains a specific key.</summary>
+		</member>
+		<member name="M:System.Diagnostics.Debug.Assert(System.Boolean)">
+			<summary>Assert a condition and logs an error message to the Unity console on failure.</summary>
+		</member>
+		<member name="T:System.String">
+			<summary>Represents text as a series of Unicode characters.</summary>
+		</member>
+		<member name="M:System.Diagnostics.Debug.Assert(System.Boolean,System.String)">
+			<summary>Assert a condition and logs an error message to the Unity console on failure.</summary>
+		</member>
+		<member name="M:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)">
+			<summary>Assert a condition and logs an error message to the Unity console on failure.</summary>
+		</member>
+		<member name="M:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String,System.Object[])">
+			<summary>Assert a condition and logs an error message to the Unity console on failure.</summary>
+		</member>
+		<member name="T:System.Threading.ThreadPriority">
+			<summary>Priority of a thread.</summary>
+		</member>
+		<member name="P:System.Drawing.Color.G">
+			<summary>Green component of the color.</summary>
+		</member>
+		<member name="P:System.Drawing.Color.Gray">
+			<summary>Gray. RGBA is (0.5, 0.5, 0.5, 1).</summary>
+		</member>
+		<member name="T:System.ComponentModel.AsyncOperation">
+			<summary>Asynchronous operation coroutine.</summary>
+		</member>
+		<member name="P:System.Drawing.Color.Green">
+			<summary>Solid green. RGBA is (0, 1, 0, 1).</summary>
+		</member>
+		<member name="M:System.Collections.Hashtable.ContainsKey(System.Object)">
+			<summary>Determines whether the Hashtable contains a specific key.</summary>
+		</member>
+		<member name="M:System.Collections.Hashtable.ContainsValue(System.Object)">
+			<summary>Determines whether the Hashtable contains a specific value.</summary>
+		</member>
+		<member name="M:System.Array.Clear(System.Array,System.Int32,System.Int32)">
+			<summary>Empties the array. The length of the array will be zero.</summary>
+		</member>
+		<member name="M:System.Collections.Hashtable.Remove(System.Object)">
+			<summary>Removes the element with the specified key from the Hashtable.</summary>
+		</member>
+		<member name="M:System.Object.ToString()">
+			<summary>Returns the name of the object.</summary>
+		</member>
+		<member name="P:System.Drawing.Color.Magenta">
+			<summary>Magenta. RGBA is (1, 0, 1, 1).</summary>
+		</member>
+		<member name="T:System.Net.NetworkInformation.Ping">
+			<summary>Ping any given IP address (given in dot notation).</summary>
+		</member>
+		<member name="P:System.Drawing.Color.R">
+			<summary>Red component of the color.</summary>
+		</member>
+		<member name="P:System.Drawing.Color.Red">
+			<summary>Solid red. RGBA is (1, 0, 0, 1).</summary>
+		</member>
+		<member name="M:System.Array.Sort(System.Array)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="P:System.Drawing.Color.White">
+			<summary>Solid white. RGBA is (1, 1, 1, 1).</summary>
+		</member>
+		<member name="M:System.Array.Sort(System.Array,System.Array)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="P:System.Drawing.Color.Yellow">
+			<summary>Yellow. RGBA is (1, 0.92, 0.016, 1), but the color is nice to look at!</summary>
+		</member>
+		<member name="M:System.Array.Sort(System.Array,System.Array,System.Collections.IComparer)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(System.Array,System.Array,System.Int32,System.Int32)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(System.Array,System.Array,System.Int32,System.Int32,System.Collections.IComparer)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(System.Array,System.Collections.IComparer)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(System.Array,System.Int32,System.Int32)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(System.Array,System.Int32,System.Int32,System.Collections.IComparer)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(T[])">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(T[],System.Collections.Generic.IComparer`1<T>)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(T[],System.Comparison`1<T>)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(T[],System.Int32,System.Int32)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(T[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(TKey[],TValue[])">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(TKey[],TValue[],System.Collections.Generic.IComparer`1<TKey>)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(TKey[],TValue[],System.Int32,System.Int32)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Array.Sort(TKey[],TValue[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<TKey>)">
+			<summary>Sorts all Array elements.</summary>
+		</member>
+		<member name="M:System.Drawing.Color.ToString()">
+			<summary>Returns a nicely formatted string of this color.</summary>
+		</member>
+	</members>
+</doc>
