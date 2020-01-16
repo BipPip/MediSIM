@@ -1,65 +1,91 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using System.Collections;
 using Valve.VR;
+
 
 namespace Valve.VR.Extras
 {
-	
 [RequireComponent(typeof(SteamVR_LaserPointer))]
+
+
 public class VRUIInput : MonoBehaviour
 {
     private SteamVR_LaserPointer laserPointer;
-    //private SteamVR_TrackedController trackedController;
-	 public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any;
+    //private SteamVR_TrackedObject trackedController;
+    //private SteamVR_Input_Sources inputSources;
+    private SteamVR_Input_Sources trackedController;
+
+    public SteamVR_Action_Boolean grabPinch; //Grab Pinch is the trigger, select from inspecter
+
+    public event PointerEventHandler PointerIn;
+    public event PointerEventHandler PointerOut;
+    public event PointerEventHandler PointerClick;
+
+    public SteamVR_Behaviour_Pose pose;
 
     private void OnEnable()
     {
+
+        if (pose == null)
+                pose = this.GetComponent<SteamVR_Behaviour_Pose>();
+            if (pose == null)
+                Debug.LogError("No SteamVR_Behaviour_Pose component found on this object", this);
+
+            // if (interactWithUI == null)
+            //     Debug.LogError("No ui interaction action has been set on this component.", this);
+
+
         laserPointer = GetComponent<SteamVR_LaserPointer>();
-        laserPointer.PointerIn -= HandlePointerIn;
-        laserPointer.PointerIn += HandlePointerIn;
-        laserPointer.PointerOut -= HandlePointerOut;
-        laserPointer.PointerOut += HandlePointerOut;
+        // laserPointer.PointerIn -= OnPointerIn;
+        // laserPointer.PointerIn += OnPointerIn;
+        // laserPointer.PointerOut -= OnPointerOut;
+        // laserPointer.PointerOut += OnPointerOut;
 
-        //trackedController = GetComponent<SteamVR_TrackedController>();
-        trackedController = inputSource;
-        if (trackedController == null)
-        {
-            trackedController = inputSource;
-            trackedController = GetComponentInParent<SteamVR_TrackedController>();
-        }
-        trackedController.TriggerClicked -= HandleTriggerClicked;
-        trackedController.TriggerClicked += HandleTriggerClicked;
+    //    inputSources = pose.inputSource;
+    //    print(inputSources);
+       
+       trackedController = pose.inputSource;
+       print(trackedController);
+        // if (trackedController == null)
+        // {
+        //     trackedController = GetComponentInParent<SteamVR_TrackedController>();
+        // }
+        // trackedController.TriggerClicked -= HandleTriggerClicked;
+        // trackedController.TriggerClicked += HandleTriggerClicked;
+
+        if (grabPinch != null)
+                {
+                    grabPinch.AddOnChangeListener(OnTriggerPressedOrReleased, trackedController);
+                }
+
     }
 
-    private void HandleTriggerClicked(object sender, PointerEventArgs e)
+     private void OnDisable()
     {
-        if (EventSystem.current.currentSelectedGameObject != null)
+        if (grabPinch != null)
         {
-            ExecuteEvents.Execute(EventSystem.current.currentSelectedGameObject, new PointerEventData(EventSystem.current), ExecuteEvents.submitHandler);
+            grabPinch.RemoveOnChangeListener(OnTriggerPressedOrReleased, inputSource);
         }
     }
 
-    private void HandlePointerIn(object sender, PointerEventArgs e)
-    {
-        var button = e.target.GetComponent<Button>();
-        if (button != null)
+    public virtual void OnPointerIn(PointerEventArgs e)
         {
-            button.Select();
-            Debug.Log("HandlePointerIn", e.target.gameObject);
+            if (PointerIn != null)
+                PointerIn(this, e);
+            print(PointerIn);
         }
-    }
 
-    private void HandlePointerOut(object sender, PointerEventArgs e)
-    {
-        
-        var button = e.target.GetComponent<Button>();
-        if (button != null)
+        public virtual void OnPointerClick(PointerEventArgs e)
         {
-            EventSystem.current.SetSelectedGameObject(null);
-            Debug.Log("HandlePointerOut", e.target.gameObject);
+            if (PointerClick != null)
+                PointerClick(this, e);
         }
-    }
+
+        public virtual void OnPointerOut(PointerEventArgs e)
+        {
+            if (PointerOut != null)
+                PointerOut(this, e);
+        }
 }
-}*/
+}

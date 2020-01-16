@@ -10,6 +10,8 @@ public class LaserInput : MonoBehaviour
    /// private SteamVR_Input_Sources inputSource;
 	public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any;
 	public static GameObject currentObject;
+
+	private static bool clicked = false;
 	
 	int currentID;
     // Start is called before the first frame update
@@ -33,47 +35,57 @@ public class LaserInput : MonoBehaviour
     {
         //put your stuff here
         print("Success");
+		print(fromAction);
+		clicked = true;
+
+		
+
     }
 
     // Update is called once per frame
     void Update()
     {
-		//Sends out a Raycast and returns an array filled with everything it hit
-		RaycastHit[] hits;
-		hits = Physics.RaycastAll(transform.position, transform.forward, 100.0F);
+		// //print(clicked);
+		// //Sends out a Raycast and returns an array filled with everything it hit
+		// RaycastHit[] hits;
+		// hits = Physics.RaycastAll(transform.position, transform.forward, 100.0F);
 		
-		//Goes through all the hit objects and checks if any of them were our button
-		for (int i = 0; i < hits.Length; i++) 
-		{
-			RaycastHit hit = hits[i];
+		// //Goes through all the hit objects and checks if any of them were our button
+		// for (int i = 0; i < hits.Length; i++) 
+		// {
+		// 	RaycastHit hit = hits[i];
 			
-			//I use the object Id to determine if I have already run the code for this object
-			int id = hit.collider.gameObject.GetInstanceID();
+		// 	//I use the object Id to determine if I have already run the code for this object
+		// 	int id = hit.collider.gameObject.GetInstanceID();
 			
-			//If I haven't then I will run it again but if I have it is unnecessary to keep running it
-			if (currentID != id)
-			{
-				currentID = id;
-				currentObject = hit.collider.gameObject;
+		// 	//If I haven't then I will run it again but if I have it is unnecessary to keep running it
+		// 	if (currentID != id)
+		// 	{
+		// 		currentID = id;
+		// 		currentObject = hit.collider.gameObject;
 				
 				
-				//Checks based off the namespace
-				string name = currentObject.name;
-				if (name == "Play")
-				{
-					Debug.Log("HIT PLAY");
-					Application.LoadLevel("lab");
-				}
+		// 		//Checks based off the namespace
+		// 		string name = currentObject.name;
+		// 		if (name == "Play")
+		// 		{
+		// 			Debug.Log("HIT PLAY");
+		// 			if (clicked) 
+		// 			{
+		// 				Destroy (GameObject.Find("Player"));
+		// 				Application.LoadLevel("lab");
+		// 			}
+		// 		}
 				
-				//Checks based off the tag
-				string tag = currentObject.tag;
-				if(tag == "Button")
-				{
-					Debug.Log("HIT BUTTON");
-				}
+		// 		//Checks based off the tag
+		// 		string tag = currentObject.tag;
+		// 		if(tag == "Button")
+		// 		{
+		// 			Debug.Log("HIT BUTTON");
+		// 		}
 				
-			}	
+		// 	}	
 
-			}
+		// 	}
 	}
 }
