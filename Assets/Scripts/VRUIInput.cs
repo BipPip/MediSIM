@@ -54,20 +54,21 @@ public class VRUIInput : MonoBehaviour
         // trackedController.TriggerClicked -= HandleTriggerClicked;
         // trackedController.TriggerClicked += HandleTriggerClicked;
 
-        if (grabPinch != null)
+       /* if (grabPinch != null)
                 {
                     grabPinch.AddOnChangeListener(OnTriggerPressedOrReleased, trackedController);
-                }
+                }*/
 
     }
 
      private void OnDisable()
     {
-        if (grabPinch != null)
+       /* if (grabPinch != null)
         {
             grabPinch.RemoveOnChangeListener(OnTriggerPressedOrReleased, inputSource);
-        }
+        }*/
     }
+    
 
     public virtual void OnPointerIn(PointerEventArgs e)
         {
