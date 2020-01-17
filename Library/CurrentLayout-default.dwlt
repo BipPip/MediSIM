@@ -95,7 +95,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 120}
   m_MaxSize: {x: 4000, y: 4020}
   vertical: 0
-  controlID: 566
+  controlID: 82
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 145
+  controlID: 120
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 74
+  controlID: 121
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 75
+  controlID: 60
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 294}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 146
+  controlID: 187
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -533,23 +533,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d80a0100
-      m_LastClickedID: 68312
-      m_ExpandedIDs: 2689feff3289feff4489feff5489feffc698fefff698feff2a99feff5cb9feff8cb9feffa8dbfefffeddfeff2ce8feffa62dffffd62dffffa4930000a89300009abf0000ccee000004ef00004aef0000560a01008e0a0100d40a0100
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 66e1ffff76fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: VivePointers
-        m_OriginalName: VivePointers
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -95916
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 11}
       m_SearchString: 
@@ -595,9 +595,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.7379736, y: -0.025697231, z: 0.39639616}
+    m_Target: {x: -0.28017014, y: -2.0924659, z: -0.24598658}
     speed: 2
-    m_Value: {x: -0.7379736, y: -0.025697231, z: 0.39639616}
+    m_Value: {x: -0.28017014, y: -2.0924659, z: -0.24598658}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -626,13 +626,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.12439416, y: -0.044073798, z: 0.0054533286, w: -0.99138963}
+    m_Target: {x: -0.12836269, y: 0.025317913, z: -0.0028835665, w: -0.99159765}
     speed: 2
-    m_Value: {x: -0.124383576, y: -0.04258029, z: 0.005265943, w: -0.99130625}
+    m_Value: {x: -0.12833752, y: 0.025312949, z: -0.0028830012, w: -0.9914032}
   m_Size:
-    m_Target: 7.4598675
+    m_Target: 5.4858923
     speed: 2
-    m_Value: 7.138629
+    m_Value: 5.4858923
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -686,7 +686,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 38432
+  m_LastSelectedObjectID: -7834
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -795,20 +795,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/HTC.UnityPlugin/ViveInputUtility/Prefabs
+    - Assets/Models/props/Materials/Materials
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/HTC.UnityPlugin/ViveInputUtility/Prefabs
+  - Assets/Models/props/Materials/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\caleb.hardy\MediSIM\MediSIM
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 143}
-    m_SelectedIDs: ca050100
-    m_LastClickedID: 67018
-    m_ExpandedIDs: 000000000c8800007e880000b08800004a890000268a0000428a0000a88b00007e8c0000e68d0000e08e0000648f000052900000149100003a910000be9100002e920000ea960000ec960000ee960000f0960000b00401006c05010086050100ba05010000ca9a3b
+    scrollPos: {x: 0, y: 156}
+    m_SelectedIDs: 3a370000
+    m_LastClickedID: 14138
+    m_ExpandedIDs: 000000001c3400006e350000ba350000d8360000ea38000038390000783a0000403c0000383d00009e3d0000604200004e440000504400005a45000050470000ba48000072490000a6490000c44a0000784b0000e6530000e8530000ea530000ec53000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -836,7 +836,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000c8800007e880000b08800004a890000268a0000428a0000a88b00007e8c0000e68d0000e08e0000648f000052900000149100003a910000be9100002e920000ea960000ec960000ee960000f0960000
+    m_ExpandedIDs: 000000001c3400006e350000ba350000d8360000ea38000038390000403c00009e3d0000604200004e4400005a45000050470000ba48000072490000c44a0000784b0000e6530000e8530000ea530000ec530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
