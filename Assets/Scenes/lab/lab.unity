@@ -5008,6 +5008,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 104228, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 427026, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.002
@@ -5783,7 +5787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403816, guid: 80565fbeae15fa746956cf545776c7d6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.028
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 403816, guid: 80565fbeae15fa746956cf545776c7d6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8385,7 +8389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3835221490967692256}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000008940697}
-  m_LocalPosition: {x: -1.916, y: 0.9427046, z: 1.9417}
+  m_LocalPosition: {x: -1.358, y: 0.997, z: 0.838}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 372328824}
